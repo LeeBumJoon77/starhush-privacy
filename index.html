@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starhush</title>
+<meta name="description" content="Connect the stars before you sleep">
+<meta property="og:title" content="Starhush">
+<meta property="og:description" content="Connect the stars before you sleep">
+<meta property="og:image" content="assets/icon.png">
+<style>
+  :root { --gold:#FFD68C; --ink:#FFF0D2; --sub:#AAB4DC; --card:rgba(255,255,255,.07); }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif; color:var(--ink);
+         background:#080C20 radial-gradient(ellipse at 50% -10%, #25306a 0%, #121838 45%, #080C20 100%) fixed; min-height:100vh; }
+  .wrap { max-width:900px; margin:0 auto; padding:26px 16px 72px; }
+  .langbar { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; margin-bottom:18px; }
+  .langbar button { border:0; background:var(--card); color:var(--sub); border-radius:999px; padding:6px 12px; font-size:.82rem; cursor:pointer; }
+  .langbar button[aria-pressed="true"] { background:var(--gold); color:#080C20; font-weight:700; }
+  a { color:var(--gold); }
+  .card { background:var(--card); border:1px solid rgba(255,214,140,.18); border-radius:20px; padding:20px; margin:14px 0; }
+  .card h2 { margin:0 0 8px; font-size:1.05rem; } .card p { margin:0; color:var(--sub); line-height:1.6; }
+  footer { margin-top:42px; text-align:center; color:var(--sub); font-size:.9rem; line-height:1.9; }
+  footer a { text-decoration:none; margin:0 10px; font-weight:600; }
+
+  header { text-align:center; }
+  .icon { width:132px; height:132px; border-radius:30px; box-shadow:0 12px 40px rgba(255,214,140,.25); }
+  h1 { font-family: "Times New Roman", Georgia, serif; font-weight:300; letter-spacing:3px; font-size:2.8rem; margin:22px 0 8px;
+       background:linear-gradient(#FFF0D2,#FFD68C); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .tag { font-size:1.1rem; color:var(--sub); margin:0 auto 26px; max-width:30em; line-height:1.5; }
+  .cta { display:inline-block; background:var(--gold); color:#080C20; text-decoration:none; font-weight:700; padding:15px 34px; border-radius:999px; box-shadow:0 8px 30px rgba(255,214,140,.35); }
+  .shots { display:flex; gap:16px; overflow-x:auto; padding:44px 4px 8px; scroll-snap-type:x mandatory; }
+  .shots img { width:240px; flex:0 0 auto; border-radius:22px; box-shadow:0 10px 30px rgba(0,0,0,.45); scroll-snap-align:center; }
+  .feats { display:grid; gap:14px; margin-top:40px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
+  .feat { background:var(--card); border:1px solid rgba(255,214,140,.18); border-radius:20px; padding:22px 20px; }
+  .feat h3 { margin:0 0 8px; font-size:1.02rem; color:var(--gold); } .feat p { margin:0; color:var(--sub); font-size:.95rem; line-height:1.55; }
+  .note { text-align:center; margin-top:30px; color:var(--sub); font-size:.88rem; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="langbar"><button type="button" data-lang="en">English</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="zh-Hans">简体</button><button type="button" data-lang="zh-Hant">繁體</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="fr">Français</button></nav>
+<header><img class="icon" src="assets/icon.png" alt="Starhush"><h1>Starhush</h1><p class="tag" data-en="Connect the stars before you sleep" data-ko="잠들기 전, 별을 이어요" data-ja="眠る前に、星をつなごう" data-zh-Hans="睡前，连起星星" data-zh-Hant="睡前，連起星星" data-es="Une las estrellas antes de dormir" data-fr="Reliez les étoiles avant de dormir">Connect the stars before you sleep</p>
+<a href="https://apps.apple.com/developer/bumjoon-lee/id6801095554" class="cta" data-en="Coming soon to the App Store" data-ko="곧 App Store에서 만나요" data-ja="まもなく App Store で" data-zh-Hans="即将登陆 App Store" data-zh-Hant="即將登陸 App Store" data-es="Muy pronto en la App Store" data-fr="Bientôt sur l&#x27;App Store">Coming soon to the App Store</a></header>
+<div class="shots"><img alt="Starhush" loading="lazy" src="assets/shot1-en.jpg" data-src-en="assets/shot1-en.jpg" data-src-ko="assets/shot1-ko.jpg" data-src-ja="assets/shot1-ja.jpg" data-src-zh-Hans="assets/shot1-zh-Hans.jpg" data-src-zh-Hant="assets/shot1-zh-Hant.jpg" data-src-es="assets/shot1-es.jpg" data-src-fr="assets/shot1-fr.jpg"><img alt="Starhush" loading="lazy" src="assets/shot2-en.jpg" data-src-en="assets/shot2-en.jpg" data-src-ko="assets/shot2-ko.jpg" data-src-ja="assets/shot2-ja.jpg" data-src-zh-Hans="assets/shot2-zh-Hans.jpg" data-src-zh-Hant="assets/shot2-zh-Hant.jpg" data-src-es="assets/shot2-es.jpg" data-src-fr="assets/shot2-fr.jpg"><img alt="Starhush" loading="lazy" src="assets/shot3-en.jpg" data-src-en="assets/shot3-en.jpg" data-src-ko="assets/shot3-ko.jpg" data-src-ja="assets/shot3-ja.jpg" data-src-zh-Hans="assets/shot3-zh-Hans.jpg" data-src-zh-Hant="assets/shot3-zh-Hant.jpg" data-src-es="assets/shot3-es.jpg" data-src-fr="assets/shot3-fr.jpg"></div>
+<div class="feats"><div class="feat"><h3 data-en="Breathe slowly with the starlight" data-ko="별빛에 맞춰 천천히 숨 쉬기" data-ja="星の光に合わせてゆっくり呼吸" data-zh-Hans="随星光慢慢呼吸" data-zh-Hant="隨星光慢慢呼吸" data-es="Respira despacio al ritmo de la luz" data-fr="Respirez lentement au rythme des étoiles">Breathe slowly with the starlight</h3><p data-en="Breathe in for 4 seconds, out for 4, and connect a star" data-ko="4초 들이쉬고, 4초 내쉬며 별을 이어요" data-ja="4秒吸って4秒吐きながら星をつなぎます" data-zh-Hans="吸气4秒、呼气4秒，连起一颗颗星" data-zh-Hant="吸氣4秒、呼氣4秒，連起一顆顆星" data-es="Inspira 4 segundos, espira 4 y une una estrella" data-fr="Inspirez 4 secondes, expirez 4, et reliez une étoile">Breathe in for 4 seconds, out for 4, and connect a star</p></div><div class="feat"><h3 data-en="88 constellations and their old stories" data-ko="88개 별자리와 옛이야기" data-ja="88星座と昔の物語" data-zh-Hans="88个星座与古老故事" data-zh-Hant="88個星座與古老故事" data-es="88 constelaciones y sus antiguas historias" data-fr="88 constellations et leurs vieilles histoires">88 constellations and their old stories</h3><p data-en="Greek myths, plus star lore from Korea and Japan" data-ko="그리스 신화, 한국과 일본의 별 이야기까지" data-ja="ギリシャ神話から韓国と日本の星の話まで" data-zh-Hans="从希腊神话到韩国和日本的星星故事" data-zh-Hant="從希臘神話到韓國和日本的星星故事" data-es="Mitos griegos y leyendas de Corea y Japón" data-fr="Mythes grecs et légendes de Corée et du Japon">Greek myths, plus star lore from Korea and Japan</p></div><div class="feat"><h3 data-en="Turn it, see real distances" data-ko="돌려 보면 보이는 실제 거리" data-ja="回すと見える本当の距離" data-zh-Hans="转一转，看见真实距离" data-zh-Hant="轉一轉，看見真實距離" data-es="Gírala y verás las distancias reales" data-fr="Tournez-la, voyez les vraies distances">Turn it, see real distances</h3><p data-en="Finished constellations open up in 3D, with each star placed at its real distance from Earth." data-ko="완성한 별자리를 3D로 돌려 보면, 별마다 지구에서의 실제 거리만큼 떨어져 있어요." data-ja="完成した星座は3Dで回せます。星はそれぞれ地球からの本当の距離に置かれています。" data-zh-Hans="完成的星座可以用 3D 转动，每颗星都放在离地球的真实距离上。" data-zh-Hant="完成的星座可以用 3D 轉動，每顆星都放在離地球的真實距離上。" data-es="Las constelaciones terminadas se abren en 3D, con cada estrella a su distancia real de la Tierra." data-fr="Les constellations terminées s&#x27;ouvrent en 3D, chaque étoile placée à sa vraie distance de la Terre.">Finished constellations open up in 3D, with each star placed at its real distance from Earth.</p></div><div class="feat"><h3 data-en="Drift off to quiet music" data-ko="고요한 음악 속 편안한 잠" data-ja="静かな音楽で安らかな眠りへ" data-zh-Hans="在宁静的音乐中安然入睡" data-zh-Hant="在寧靜的音樂中安然入睡" data-es="Duerme con música tranquila" data-fr="Endormez-vous en musique douce">Drift off to quiet music</h3><p data-en="Each touch adds a note to a little lullaby" data-ko="누를 때마다 음이 이어져 작은 자장가가 돼요" data-ja="タップするたびに音がつながり、小さな子守歌に" data-zh-Hans="每按一下就多一个音，连成小小的摇篮曲" data-zh-Hant="每按一下就多一個音，連成小小的搖籃曲" data-es="Cada toque suma una nota a una pequeña nana" data-fr="Chaque toucher ajoute une note à une petite berceuse">Each touch adds a note to a little lullaby</p></div></div>
+<p class="note" data-en="Free. No account. Ads only as a small banner in My Sky and an optional rewarded ad; never while you connect stars." data-ko="무료이며 계정이 없습니다. 광고는 내 하늘의 작은 배너와 원할 때만 보는 보상형 광고뿐이고, 별을 잇는 동안에는 없습니다." data-ja="無料・アカウント不要。広告は「わたしの空」の小さなバナーと、見たいときだけ見るリワード広告のみ。星をつないでいる間は出ません。" data-zh-Hans="免费，无需账号。广告只有“我的天空”里的小横幅和自愿观看的激励广告，连星时不会出现。" data-zh-Hant="免費，無需賬號。廣告只有「我的天空」裡的小橫幅和自願觀看的激勵廣告，連星時不會出現。" data-es="Gratis y sin cuenta. Solo un pequeño banner en Mi cielo y un anuncio opcional con recompensa; nunca mientras unes estrellas." data-fr="Gratuit, sans compte. Seulement une petite bannière dans Mon ciel et une pub récompensée facultative ; jamais pendant que vous reliez les étoiles.">Free. No account. Ads only as a small banner in My Sky and an optional rewarded ad; never while you connect stars.</p>
+<footer><a href="index.html" data-en="Home" data-ko="처음으로" data-ja="ホーム" data-zh-Hans="首页" data-zh-Hant="首頁" data-es="Inicio" data-fr="Accueil">Home</a><a href="privacy.html" data-en="Privacy Policy" data-ko="개인정보처리방침" data-ja="プライバシーポリシー" data-zh-Hans="隐私政策" data-zh-Hant="隱私政策" data-es="Política de privacidad" data-fr="Politique de confidentialité">Privacy Policy</a><a href="support.html" data-en="Support" data-ko="고객 지원" data-ja="サポート" data-zh-Hans="支持" data-zh-Hant="支援" data-es="Soporte" data-fr="Assistance">Support</a><a href="data/README.md" data-en="Star data (CC BY-SA)" data-ko="별 자료 (CC BY-SA)" data-ja="星のデータ (CC BY-SA)" data-zh-Hans="星体数据 (CC BY-SA)" data-zh-Hant="星體資料 (CC BY-SA)" data-es="Datos estelares (CC BY-SA)" data-fr="Données stellaires (CC BY-SA)">Star data (CC BY-SA)</a><a href="https://apps.apple.com/developer/bumjoon-lee/id6801095554" data-en="More apps" data-ko="다른 앱 보기" data-ja="ほかのアプリ" data-zh-Hans="更多应用" data-zh-Hant="更多App" data-es="Más apps" data-fr="Autres apps">More apps</a><div style="margin-top:14px">Bumjoon Lee &middot; mall77@naver.com<br>&copy; 2026 Bumjoon Lee</div></footer>
+</div>
+<script>
+  var LANGS = ["en","ko","ja","zh-Hans","zh-Hant","es","fr"];
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll(".shots img").forEach(function (im) { var v = im.getAttribute("data-src-" + lang); if (v) im.src = v; });
+    document.querySelectorAll("[data-en]").forEach(function (el) { var v = el.getAttribute("data-" + lang) || el.getAttribute("data-en"); if (v) el.textContent = v; });
+    document.querySelectorAll(".langbar button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === lang ? "true" : "false"); });
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  }
+  function detect() {
+    try { var s = localStorage.getItem("lang"); if (s && LANGS.indexOf(s) >= 0) return s; } catch (e) {}
+    var n = (navigator.language || "en").toLowerCase();
+    if (n.indexOf("ko") === 0) return "ko"; if (n.indexOf("ja") === 0) return "ja";
+    if (n.indexOf("zh") === 0) return (n.indexOf("tw") > 0 || n.indexOf("hk") > 0 || n.indexOf("hant") > 0) ? "zh-Hant" : "zh-Hans";
+    if (n.indexOf("es") === 0) return "es"; if (n.indexOf("fr") === 0) return "fr"; return "en";
+  }
+  document.querySelectorAll(".langbar button").forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.lang); }); });
+  apply(detect());
+</script>
+</body>
+</html>
